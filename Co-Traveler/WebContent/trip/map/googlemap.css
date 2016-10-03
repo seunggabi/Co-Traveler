@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+ html { height: 100% }
+ body { height: 100%; margin: 0; padding: 0 }
+ #wrap
+ {
+ 	max-width:1200px; height: 800px;
+ 	margin: 0 auto;
+ 	 margin-top:70px;
+ }
+ #map { width: 65%; height: 100%; float: left; margin: 10px}
+ #enroll
+ {
+ 	height: 100%;
+ 	padding-top: 10px;
+ }
+ 
+ .year{
+ 		width: 70px;
+ }
+ 
+ .date{
+ 		width:35px;
+ }

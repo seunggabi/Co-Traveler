@@ -1,0 +1,367 @@
+@font-face {
+      font-family: 'Nanum Gothic';
+      font-style: normal;
+      font-weight: 400;
+      src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+      src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+           url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+           url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+           url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+    @font-face {
+      font-family: 'Nanum Gothic';
+      font-style: normal;
+      font-weight: 700;
+      src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+      src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+           url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),
+           url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
+           url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+}
+    @font-face {
+      font-family: 'Nanum Gothic';
+      font-style: normal;
+      font-weight: 800;
+      src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot);
+      src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+           url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff2) format('woff2'),
+           url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff) format('woff'),
+           url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+html { font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+-ms-text-size-adjust: 100%; /* 2 */ }
+/* * Addresses `font-family` inconsistency between `textarea` and other form
+* elements. */
+html, button, input, select, textarea { font-family: sans-serif; }
+/* * Addresses margins handled incorrectly in IE 6/7. */
+body { margin: 0; font-family: "Nanum Gothic" !important; overflow-x: hidden; }
+body { font-family: 'Nanum Gothic' !important;}
+*{ font-family: 'Nanum Gothic' !important;}
+
+body div.bodyWrapper
+{
+	margin-top:100px;
+}
+body div#registerBox
+{
+	margin: 0 auto;
+	width:350px;
+}
+body div#registerBox h2, body div#registerBox .btn
+{
+	width:100%;
+	text-align:center;
+}
+body div#registerBox dt label
+{
+	width:100px;
+}
+body div#registerBox dt, body div#registerBox dd
+{
+	display:inline-block;
+}
+body div#registerBox input[type=radio]
+{
+	margin-right:25px;
+}
+
+body div.boardWrapper
+{
+	margin:0 auto;
+	width:800px;
+}
+div.borad table
+{
+	border:1px solid black;
+	width:800px;
+}
+td, th
+{
+	border:1px solid black;
+	text-align:center !important;
+}
+th.num
+{
+	width:30px;
+}
+th.title
+{
+	width:200px;
+}
+th.author
+{
+	width:50px;
+}
+th.wtime
+{
+	width:100px;
+}
+th.cnt
+{
+	width:50px;
+}
+.boardTitle
+{
+	font-weight:bold;
+}
+.boardAuthor
+{
+	text-align:right;
+}
+.boardContent
+{
+	margin-top:50px;
+	padding:15px;
+}
+textarea#content
+{
+	width:672px;
+}
+@media screen and (min-width:512px) and (max-width:1024px)
+{
+	textarea#content
+	{
+		width:400px;
+	}
+	body div.bodyWrapper
+	{
+		margin:0 auto;		
+		margin-top:150px;		
+	}
+	body div.boardWrapper
+	{
+		margin:0 auto;
+		width:530px;
+	}	
+	div.borad table
+	{
+		border:1px solid black;
+		width:530px;
+	}
+	#myPageBox
+	{
+		width:530px !important;
+	}
+}
+@media screen and (min-width:0px) and (max-width:512px)
+{
+	textarea#content
+	{
+		width:400px;
+	}
+	body div.bodyWrapper
+	{
+		margin:0 auto;		
+		margin-top:150px;		
+	}
+	body div.boardWrapper
+	{
+		margin:0 auto;
+		width:350px;
+	}	
+	div.borad table
+	{
+		border:1px solid black;
+		width:350px;
+	}
+	#myPageBox
+	{
+		width:350px !important;
+	}
+}
+div.menu
+{
+	text-align:right;
+	margin-bottom:10px;
+}
+div#myPageBox
+{
+	text-align:center;
+	width:600px;
+	margin:0 auto;
+}
+pagination .disabled>span, .pagination .disabled>a, .pagination .disabled>a:hover, .pagination .disabled>a:focus {
+color: #999;
+cursor: not-allowed;
+background-color: #fff;
+border-color: #ddd;
+}
+.pagination li>a:hover, .pagination li>span:hover, .pagination li>a:focus, .pagination li>span:focus {
+background-color: #eee;
+}
+.pagination li:first-child>a, .pagination li:first-child>span {
+margin-left: 0;
+border-bottom-left-radius: 4px;
+border-top-left-radius: 4px;
+}
+.pagination li:last-child>a, .pagination li:last-child>span {
+margin-right: 0;
+border-bottom-right-radius: 4px;
+border-top-right-radius: 4px;
+}
+.pagination .disabled>span, .pagination.disabled>a, .pagination .disabled>a:hover, .pagination .disabled>a:focus {
+color: #999;
+cursor: not-allowed;
+background-color: #fff;
+border-color: #ddd;
+}
+.pagination li
+{
+	float: left;
+	margin-right: -6px;
+}
+.pagination li a{
+position: relative;
+float: left;
+padding: 6px 12px;
+margin-left: -1px;
+line-height: 1.428571429;
+text-decoration: none;
+background-color: #fff;
+border: 1px solid #ddd;
+}
+a:hover, a:focus {
+color: #2a6496;
+text-decoration: underline;
+}
+a:active, a:hover {
+outline: 0;
+}
+a {
+color: #428bca;
+text-decoration: none;
+}
+.pagination .active a{
+z-index: 2;
+color: #fff;
+cursor: default;
+background-color: #428bca;
+border-color: #428bca;
+}
+.btnBox
+{
+	text-align:center;
+	width:100%;
+}
+.mainWrapper
+{
+	border:3px solid #e4e1dd;
+	height:700px;
+	max-width:1000px;
+	margin:50px auto 0 auto;
+}
+.loginBox
+{
+	position:absolute;
+	top:0;
+	border:3px solid #e4e1dd;
+	padding:20px;
+	margin:550px 0 0 675px;
+	width:200px;
+	text-align:right;
+	background:white;
+}
+.loginBox input
+{
+	margin-bottom:5px;
+}
+.loginBox button
+{
+	margin-top:5px;
+	padding:0 10px;
+	border:1px solid #e4e1dd;
+}
+.gnb a
+{
+	font-size:15pt;
+	padding:25px 20px;
+	font-weight:bold;
+}
+.animation_canvas 
+{
+	overflow:hidden;
+	position:relative;           
+	width:100%; height:100%;
+	margin:0px auto;
+}
+
+.slider_panel 
+{ 
+	position:relative; 
+}
+.slider_image 
+{
+	float:left; width:100%; height:100%;
+}
+
+.slider_text_panel 
+{
+	position:absolute; width:100%; height:100%; 
+}
+.slider_text 
+{
+	position:absolute; width:100%; height:100%; 
+}
+img 
+{
+	width:100%;
+	display:block;
+	float:left;
+}
+#prev, #next
+{
+	width:auto;
+	margin-right: 20px;
+}
+.bjqs-prev a, .bjqs-next a
+{
+	top: 45% !important;
+}
+.bjqs-prev a
+{
+	margin-left: 20px;
+}
+.bjqs-next a
+{
+	margin-right: 20px;
+}
+#nav
+{
+	margin:0px 20px;
+}
+li#nav
+{
+	display:inline-block;
+	height: 1%;
+	width: 1%;
+	background-color: white;
+}
+li#nav img
+t
+}
+li#nav.active-marker
+{
+	background-color: gray;
+}
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align:center; left:0 !important; position:absolute; bottom:25px;}
+ol.bjqs-markers li{display:inline;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+.center{ text-align:center; }
+.bold{font-weight:bold;}
+.red{color:red !important;}
+#myTrip
+{
+	margin-top:100px;
+}
+#myTrip table
+{
+	min-width:600px;
+}
